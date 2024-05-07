@@ -1,4 +1,4 @@
-package Sintaxe.Tipos_Variaveis;
+package Sintaxe;
 public class VariaveisConstantes {
     public static void main(String[] args) throws Exception {
         final double VALOR_DE_PI = 3.14;
