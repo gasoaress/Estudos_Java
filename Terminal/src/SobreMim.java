@@ -1,0 +1,19 @@
+/* QUANDO EXECUTAMOS UM MÉTODO MAIN, ELE PERMITE
+* QUE PASSEMOS UM ARRAY DE STRINGS */
+
+/*Executando Via Terminal EXEMPLO */
+//DIGITAR: java NOME_DA_CLASSE argumento0 argumento1 argumento2 ....
+
+public class SobreMim {
+    public static void main(String[] args) {
+        //os argumentos começam com indice 0
+        String nome = args [0];
+        String sobrenome = args [1];
+        int idade = Integer.valueOf(args[2]); //vamos falar sobre Wrappers
+        double altura = Double.valueOf(args[3]);
+
+        System.out.println("Ola, me chamo " + nome + " " + sobrenome);
+        System.out.println("Tenho " + idade + " anos ");
+        System.out.println("Minha altura é " + altura + "cm ");
+    }
+}
