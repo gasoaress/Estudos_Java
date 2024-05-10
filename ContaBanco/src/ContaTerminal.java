@@ -10,6 +10,7 @@ public class ContaTerminal {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println("Seja Bem Vindo ao Banco Java!");
+        System.out.println("Para criar uma Conta, insira os valores.");
         System.out.println("-------------------------------\n");
 
         System.out.println("Por favor digite o Número da Conta.");
