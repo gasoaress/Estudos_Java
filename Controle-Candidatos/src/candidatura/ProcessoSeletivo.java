@@ -25,15 +25,15 @@ public class ProcessoSeletivo {
             if (continuarTentando) {
                 ligacoesRealizadas++;
             } else {
-                System.out.println("CONTATO REALIZADO COM SUCESSO");
+                System.out.println("CONTATO REALIZADO COM SUCESSO COM O CANDIDATO "+ candidato + "\n");
             }
 
         } while (continuarTentando && ligacoesRealizadas < 3);
 
         if (atendeu) {
-            System.out.println("CONSEGUIMOS CONTATO COM " + candidato + " NA " + ligacoesRealizadas + " TENTATIVA");
+            System.out.println("CONSEGUIMOS CONTATO COM " + candidato + " NA " + ligacoesRealizadas + " TENTATIVA" + "\n");
         } else {
-            System.out.println("NÃO CONSEGUIMOS CONTATO COM " + candidato + ", NÚMERO MAXIMO TENTATIVAS " + ligacoesRealizadas + " REALIZADA");
+            System.out.println("NÃO CONSEGUIMOS CONTATO COM " + candidato + ", NÚMERO MAXIMO TENTATIVAS " + ligacoesRealizadas + " REALIZADA" + "\n");
         }
 
     }
