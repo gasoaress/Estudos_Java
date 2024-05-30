@@ -1,18 +1,24 @@
 // Criando o enum EstadoBrasileiro para ser usado em toda a aplicação.
 public enum EstadoBrasileiro {
-	SAO_PAULO ("SP","São Paulo"),
-	RIO_JANEIRO ("RJ", "Rio de Janeiro"),
-	PIAUI ("PI", "Piauí"),
-	MARANHAO ("MA","Maranhão") ,
-    BAHIA("BA", "BAHIA"),
+	/* ENUNS: CRIADO PARA VALORES PRÉ-ESTABELECIDOS */
+	SAO_PAULO ("SP","São Paulo", 11),
+	RIO_JANEIRO ("RJ", "Rio de Janeiro", 12),
+	PIAUI ("PI", "Piauí", 13),
+	MARANHAO ("MA","Maranhão",14) ,
+    BAHIA("BA", "BAHIA",15),
     ;
 	
 	private String nome;
 	private String sigla;
-	
-	private EstadoBrasileiro(String sigla, String nome) {
+	private int codigoIBGE;
+
+	private EstadoBrasileiro(String sigla, String nome,  int codigoIBGE) {
 		this.sigla = sigla;
 		this.nome = nome;
+		this.codigoIBGE = codigoIBGE;
+	}
+	public int getCodigoIBGE() {
+		return codigoIBGE;
 	}
 	public String getSigla() {
 		return sigla;
