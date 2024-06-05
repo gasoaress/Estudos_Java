@@ -1,21 +1,9 @@
 //a classe MSNMessenger é ou representa
-public class ServicoMensagemInstantanea {
-	public void enviarMensagem() {
-		//primeiro confirmar se esta conectado a internet
-		validarConectadoInternet();
-		System.out.println("Enviando mensagem");
-		//depois de enviada, salva o histórico da mensagem
-		salvarHistoricoMensagem();
-	}
-	public void receberMensagem() {
-		System.out.println("Recebendo mensagem");
-	}
-	
-	//métodos privadas, visíveis somente na classe
-	private void validarConectadoInternet() {
-		System.out.println("Validando se está conectado a internet");
-	}
-	private void salvarHistoricoMensagem() {
-		System.out.println("Salvando o histórico da mensagem");
-	}
+public abstract class ServicoMensagemInstantanea {
+	/* NA HERANÇA TODOS HERDAVAM A MESMA MANEIRA DE ENVIO/RECEBIMENTO DE MENSAGEM
+	 * COM ABSTRAÇÃO, CADA UM TRABALHA COM SUA MANEIRA ÚNICA DE ENVIO DE MENSAGENS
+	 * METODOS ABSTRATOS SÃO IDENIFICADOS PELA PALAVRA RESERVADA "ABSTRACT" E POR NÃO TEM NADA EM SEU CORPO, TERMINANDO COM "();"
+	 */
+	public abstract void EnviarMensagem();
+	public abstract void ReceberMensagem();
 }
