@@ -1,6 +1,6 @@
 # Estudos de Java
 
-Este repositório contém códigos e exercícios práticos realizados durante meus estudos de Java. Ele está organizado em diversas pastas, cada uma abordando diferentes pilares da linguagem e seus principais conceitos.
+Este repositório contém códigos e exercícios práticos realizados durante meus estudos de Java enquanto fazia o bootcamp de Java do Santander. Ele está organizado em diversas pastas, cada uma abordando diferentes pilares da linguagem e seus principais conceitos.
 
 ## Estrutura do Repositório
 
